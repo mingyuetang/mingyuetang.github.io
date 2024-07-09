@@ -25,7 +25,7 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background: rgba(173, 216, 230, 0.7); /* 浅蓝色背景，透明度 */
+            background: rgba(173, 216, 230, 0.3); /* 浅蓝色背景，透明度 */
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* 更重的光线阴影 */
             border-radius: 10px; /* 弱化边缘棱角 */
         }
@@ -34,6 +34,14 @@
             margin: 20px auto;
             padding: 20px;
             background: rgba(144, 238, 144, 0.3); /* 糖果绿色背景，透明度 */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* 更重的光线阴影 */
+            border-radius: 10px; /* 弱化边缘棱角 */
+        }
+        .purple-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(216, 191, 216, 0.3); /* 低饱和度浅紫色背景，透明度 */
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* 更重的光线阴影 */
             border-radius: 10px; /* 弱化边缘棱角 */
         }
@@ -104,6 +112,20 @@
         .research-interests i {
             font-size: 18px;
             margin-right: 5px;
+            color: #6ca6cd; /* 设置图标颜色 */
+        }
+        .honors-list {
+            list-style-type: none; /* 去掉默认的列表符号 */
+            padding: 0;
+        }
+        .honors-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .honors-list li i {
+            font-size: 18px;
+            margin-right: 10px;
             color: #6ca6cd; /* 设置图标颜色 */
         }
         .social-icons {
@@ -193,6 +215,21 @@
                 <div><i class="fas fa-cloud"></i>Tropical air-sea interaction</div>
                 <div><i class="fas fa-cloud"></i>Lagrangian model’s developing and analysis</div>
             </div>
+        </div>
+    </div>
+    <div class="purple-container">
+        <div class="section">
+            <h2>Honors and Awards</h2>
+            <ul class="honors-list">
+                <li><i class="fas fa-award"></i>FAS Research and Academic Exchange travel grant, Harvard, 2024</li>
+                <li><i class="fas fa-award"></i>Advanced Study Program (ASP) Graduation Visit Program (GVP) fellowship, National Center of Atmospheric Research (NCAR), NSF, 2024</li>
+                <li><i class="fas fa-award"></i>Advanced Study Program (ASP) Bridge to GVP fellowship, National Center of Atmospheric Research (NCAR), NSF, 2023</li>
+                <li><i class="fas fa-award"></i>Thomas A. Schroeder Award for Outstanding Student Research Presentation, the UH Mānoa Department of Atmospheric Science’s student research Symposium, 2021</li>
+                <li><i class="fas fa-award"></i>Cyber Infrastructure Training to Advance Climate Science Fellowship, Data Science Fellow at Hawaii Data Science Institute, NSF, 2021</li>
+                <li><i class="fas fa-award"></i>Excellent Honor Graduate Award, NUIST, China, 2019</li>
+                <li><i class="fas fa-award"></i>Meritorious Winner, Interdisciplinary Contest in Modeling, the Consortium for Mathematics and Its Application, USA, 2018</li>
+                <li><i class="fas fa-award"></i>1st Place Scholarship & Excellent Student Award, NUIST, China, 2016-2018</li>
+            </ul>
         </div>
     </div>
 </body>
