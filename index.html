@@ -69,6 +69,11 @@
             display: flex;
             justify-content: space-around;
             margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .image-row div {
+            text-align: center;
+            margin-bottom: 20px;
         }
         .image-row img {
             width: 200px;
@@ -76,9 +81,6 @@
             object-fit: cover;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .image-row div {
-            text-align: center;
         }
         .image-row p {
             margin-top: 10px;
@@ -89,11 +91,12 @@
             display: flex;
             justify-content: center;
             margin-top: 20px;
+            flex-wrap: wrap;
         }
         .social-icons a {
             color: #333;
             font-size: 1.5em;
-            margin: 0 10px;
+            margin: 10px;
             text-decoration: none;
         }
         .social-icons a:hover {
@@ -104,6 +107,25 @@
             color: #333;
             padding: 20px 0;
             text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+            .navbar a {
+                padding: 10px;
+                font-size: 1.2em;
+            }
+            .image-row {
+                flex-direction: column;
+                align-items: center;
+            }
+            .image-row img {
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -124,7 +146,7 @@
         <div class="section">
             <p><em>Welcome to my homepage!</em></p>
             <p>I am a graduate student in the Department of Atmospheric Sciences at the University of Hawai’i at Manoa, working with Prof. Giuseppe Torri.</p>
-            <p>My Ph.D. work focuses on understanding convective organization and propagation associated with the MJO, especially the physical mechanisms of cold pool dynamics and gravity waves. My works mostly use the combination of Large Eddy Simulations/Cloud Resolving Models and a Lagrangian Particle Dispersion Model, as well as Convection-Permitting models, trying to understand complicated dynamic and thermodynamic cloud processes.</p>
+            <p>My Ph.D. work focuses on understanding convective organization and propagation associated with the MJO, especially the physical mechanisms of cold pool dynamics and gravity waves. My works mostly use the combination of Large Eddy Simulations/Cloud Resolving Models and a Lagrangian Particle Dispersion Model, as well as Convection-Permitting Models, trying to understand complicated dynamic and thermodynamic cloud processes.</p>
             <p>I am a big fan of cross-scale precipitating clouds :)</p>
         </div>
         <div class="image-row">
@@ -149,7 +171,7 @@
                 <a href="https://twitter.com/tang_mingyue" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.researchgate.net/profile/Mingyue-Tang" target="_blank"><i class="fab fa-researchgate"></i></a>
                 <a href="cv.pdf" target="_blank"><i class="fas fa-file-alt"></i></a>
-                <a href="https://scholar.google.com" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://scholar.google.com/citations?user=uHS8cHoAAAAJ&hl=en&oi=ao" target="_blank"><i class="fas fa-graduation-cap"></i></a>
             </div>         
             <p>Contact: mingyue@hawaii.edu</p>
             <p>&copy; 2024 Mingyue Tang. All rights reserved.</p>
