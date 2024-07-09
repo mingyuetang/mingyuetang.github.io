@@ -70,13 +70,25 @@
         .highlight {
             font-weight: bold; /* 设置加粗 */
         }
-        .gif-container {
+        .gif-container, .img-container {
             display: flex;
-            justify-content: center; /* 使GIF居中 */
+            justify-content: center; /* 使图片居中 */
             margin-bottom: 20px;
         }
-        .gif-container img {
-            max-width: 100%; /* GIF图片最大宽度 */
+        .gif-container img, .img-container img {
+            max-width: 100%; /* 图片最大宽度 */
+            height: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 增加阴影效果 */
+            border-radius: 10px; /* 圆角 */
+        }
+        .img-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            justify-items: center;
+        }
+        .img-grid img {
+            width: 100%;
             height: auto;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 增加阴影效果 */
             border-radius: 10px; /* 圆角 */
@@ -91,6 +103,9 @@
             }
             .research-container {
                 margin-left: 20px; /* 缩小移动端的缩进 */
+            }
+            .img-grid {
+                grid-template-columns: 1fr; /* 移动设备上图片排列成一列 */
             }
         }
     </style>
@@ -117,18 +132,30 @@
     <div class="research-container">
         <div class="section">
             <h2>Madden-Julian Oscillation (MJO)</h2>
+            <div class="img-container">
+                <img src="Fig_MJO.png" alt="Madden-Julian Oscillation">
+            </div>
             <p>Details about the research on Madden-Julian Oscillation (MJO)...</p>
         </div>
     </div>
     <div class="research-container">
         <div class="section">
             <h2>Lagrangian Particle Dispersion Model (LPDM)</h2>
+            <div class="img-grid">
+                <img src="Fig.LPDM1.png" alt="LPDM Figure 1">
+                <img src="Fig.LPDM2.png" alt="LPDM Figure 2">
+                <img src="Fig.LPDM3.png" alt="LPDM Figure 3">
+                <img src="Fig.LPDM4.png" alt="LPDM Figure 4">
+            </div>
             <p>Details about the research on Lagrangian Particle Dispersion Model (LPDM)...</p>
         </div>
     </div>
     <div class="research-container">
         <div class="section">
             <h2>Cold Pools, Moist Rings & Cloud Distances</h2>
+            <div class="img-container">
+                <img src="Fig_CP.MR.Dis.png" alt="Cold Pools, Moist Rings & Cloud Distances">
+            </div>
             <p>Details about the research on the role of cold pools, moist rings, and cloud distances...</p>
         </div>
     </div>
