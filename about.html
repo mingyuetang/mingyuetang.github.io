@@ -25,8 +25,9 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: rgba(173, 216, 230, 0.7); /* 浅蓝色背景，透明度 */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* 更重的光线阴影 */
+            border-radius: 10px; /* 弱化边缘棱角 */
         }
         h1, h2 {
             color: #333;
@@ -44,7 +45,7 @@
             margin: 0;
         }
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 30px; /* 增大段落之间的间距 */
         }
         .navbar {
             display: flex;
@@ -67,13 +68,14 @@
         }
         .education-item {
             display: flex;
-            align-items: center;
-            margin-bottom: 10px;
+            align-items: flex-start;
+            margin-bottom: 20px; /* 增加段落之间的间距 */
         }
         .education-item i {
             font-size: 24px;
             margin-right: 10px;
             color: #6ca6cd;
+            margin-top: 5px; /* 上移图标 */
         }
         .education-details {
             margin-left: 10px;
@@ -128,8 +130,9 @@
             <div class="education-item">
                 <i class="fas fa-graduation-cap"></i>
                 <div class="education-details">
-                    <strong>Ph.D. Candidate, Atmospheric Sciences</strong><br>
+                    <strong>Ph.D. Candidate, Atmospheric Sciences</strong><br> 
                     University of Hawai‘i at Mānoa, Honolulu, HI<br>
+                    (Jan 2020 – present)<br>
                     Advisor: Giuseppe Torri<br>
                     Committee: Fei-Fei Jin, Yi-Leng Chen, Alison Nugent, Kelvin Richards, Jimy Dudhia
                 </div>
@@ -139,7 +142,7 @@
                 <div class="education-details">
                     <strong>Bachelor of Science, Atmospheric Sciences</strong><br>
                     Nanjing University of Information Science and Technology (NUIST), China<br>
-                    GPA: 3.75/4, Ranking: 13/389<br>
+                    (September 2015 – June 2019)<br>
                     Thesis: "The possible physical mechanism of tropopause height changing under Global Warming"<br>
                     Advisor: Peng Liu
                 </div>
