@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mingyue Tang's Academic Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -47,19 +48,23 @@
         }
         .navbar {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             background-color: #333;
             padding: 10px 0;
         }
         .navbar a {
             color: white;
-            padding: 14px 20px;
+            padding: 10px;
             text-decoration: none;
             text-align: center;
+            font-size: 1.2em;
         }
         .navbar a:hover {
             background-color: #ddd;
             color: black;
+        }
+        .navbar .icon {
+            margin-left: 10px;
         }
         .image-row {
             display: flex;
@@ -81,6 +86,13 @@
             font-size: 1em;
             color: #333;
         }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -90,6 +102,11 @@
         <a href="research.html">Research</a>
         <a href="publications.html">Publications</a>
         <a href="share.html">Share</a>
+        <a href="mailto:mingyue@hawaii.edu" class="icon"><i class="fas fa-envelope"></i></a>
+        <a href="https://twitter.com/tang_mingyue" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.researchgate.net/profile/Mingyue-Tang" target="_blank" class="icon"><i class="fab fa-researchgate"></i></a>
+        <a href="cv.pdf" target="_blank" class="icon"><i class="fas fa-file-alt"></i></a>
+        <a href="https://scholar.google.com" target="_blank" class="icon"><i class="fas fa-graduation-cap"></i></a>
     </div>
     <div class="header">
         <h1>Mingyue Tang</h1>
@@ -100,7 +117,7 @@
         <div class="section">
             <p><em>Welcome to my homepage!</em></p>
             <p>I am a graduate student in the Department of Atmospheric Sciences at the University of Hawai’i at Manoa, working with Prof. Giuseppe Torri.</p>
-            <p>My Ph.D work focuses on understanding convective organization and propagation associated with the MJO, especially the physical mechanisms of cold pool dynamics and gravity waves. My works mostly use the combination of Large Eddy Simulations/Cloud Resolving Models and a Lagrangian Particle Dispersion Model, as well as Convection-Permitting models, trying to understand complicated dynamic and thermodynamic cloud processes.</p>
+            <p>My Ph.D. work focuses on understanding convective organization and propagation associated with the MJO, especially the physical mechanisms of cold pool dynamics and gravity waves. My works mostly use the combination of Large Eddy Simulations/Cloud Resolving Models and a Lagrangian Particle Dispersion Model, as well as Convection-Permitting models, trying to understand complicated dynamic and thermodynamic cloud processes.</p>
             <p>I am a big fan of cross-scale precipitating clouds :)</p>
         </div>
         <div class="image-row">
@@ -120,7 +137,7 @@
     </div>
     <footer>
         <div class="container">
-            <p>Contact: mingyue@hawaii.edu</p>
+            <p>Contact: <a href="mailto:mingyue@hawaii.edu" style="color: #fff;">mingyue@hawaii.edu</a></p>
             <p>&copy; 2024 Mingyue Tang. All rights reserved.</p>
         </div>
     </footer>
