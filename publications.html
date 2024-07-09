@@ -29,6 +29,14 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding-left: 40px; /* 整体缩进 */
         }
+        .presentation-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding-left: 40px; /* 整体缩进 */
+        }
         h1, h2 {
             color: #333;
         }
@@ -79,6 +87,29 @@
         .publication-section {
             margin-left: 40px; /* 缩进标题后的内容 */
         }
+        .presentation-section {
+            margin-left: 40px; /* 缩进标题后的内容 */
+        }
+        .presentation-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .presentation-list li {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 20px; /* 为小圆点留出空间 */
+        }
+        .presentation-list li::before {
+            content: "•";
+            color: #00008B; /* 深蓝色 */
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .microphone-icon {
+            margin-right: 10px;
+            color: #6ca6cd; /* 设置图标颜色 */
+        }
     </style>
 </head>
 <body>
@@ -117,6 +148,21 @@
                         <span class="number">1.</span>Liu, P., <strong>Tang, M.</strong>, Yu, H., & Zhang, Y. (2020). Influence of arctic oscillation on frequency of wintertime fog days in eastern China. <em>Atmosphere</em>, 11(2), 162.
                     </li>
                 </ol>
+            </div>
+        </div>
+    </div>
+    <div class="presentation-container">
+        <div class="section">
+            <h2>Selected Presentations</h2>
+            <h3><i class="fas fa-microphone microphone-icon"></i>Oral</h3>
+            <div class="presentation-section">
+                <ul class="presentation-list">
+                    <li><strong>Tang, M.</strong>, Torri, G., Sakaeda, N., The role of cold pools in modulating convective organization during the MJO, NCAR Mesoscale and Microscale Meteorology Laboratory (MMM) Seminar, May 2024 <a href="recording">[recording]</a></li>
+                    <li><strong>Tang, M.</strong>, Torri, G., The Simulated Organization of Deep Convection during MJO, 2023 AMS Conference on Mesoscale Processes, Madison, WI</li>
+                    <li><strong>Tang, M.</strong>, Torri, G., Modeling the organization of convective clouds during the MJO, 2023 Cloud Tracking Workshop, University of Oxford, UK (virtual)</li>
+                    <li><strong>Tang, M.</strong>, Torri, G., Modeling the organization of convective clouds during the MJO, 2022 AGU Annual Meeting, Chicago, IL</li>
+                    <li><strong>Tang, M.</strong>, Torri, G., Diagnosing Convective Organization in Different Phases of the MJO: A Modeling Study, 2021 UH Mānoa Department of Atmospheric Science Student Research Symposium, Honolulu, HI</li>
+                </ul>
             </div>
         </div>
     </div>
