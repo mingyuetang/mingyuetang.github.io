@@ -1,1 +1,2 @@
-This script is going to make a personal acadamic webpage for Mingyue Tang.
+This script makes a personal academic webpage for Mingyue Tang.
+The main page is designed as index.html.
