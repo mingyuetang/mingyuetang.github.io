@@ -56,4 +56,143 @@
         }
         .navbar {
             display: flex;
-            justify
+            justify-content: center;
+            background-color: #7f8c8d; /* 更优雅的灰色 */
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #bdc3c7;
+            color: #333;
+        }
+        .image-row {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .image-row div {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-row img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .image-row p {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #333;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .social-icons a {
+            color: #333;
+            font-size: 1.5em;
+            margin: 10px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #6ca6cd;
+        }
+        footer {
+            background-color: #f4f4f4; /* 与主体背景颜色匹配 */
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-small {
+            font-size: 0.8em;
+            color: #999;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+            .navbar a {
+                padding: 5px;
+                font-size: 0.9em;
+            }
+            .image-row {
+                flex-direction: column;
+                align-items: center;
+            }
+            .image-row img {
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="share.html">Share</a>
+    </div>
+    <div class="header">
+        <h1>Publications</h1>
+        <img src="IMGprofile.png" alt="Profile Picture" class="profile-pic">
+        <p>Ph.D. Student, University of Hawai‘i at Mānoa</p>
+    </div>
+    <div class="container">
+        <div class="section">
+            <h2>Peer-reviewed Publications</h2>
+            <h3>(Ph.D. work:)</h3>
+            <ol>
+                <li>
+                    <strong>Tang, M.</strong>, Torri, G., & Sakaeda, N. (2024). The role of cold pools in modulating convective organization during the MJO. <em>Geophysical Research Letters</em>, 51, e2023GL108050. <a href="https://doi.org/10.1029/2023GL108050" target="_blank">https://doi.org/10.1029/2023GL108050</a>. 
+                    <br>
+                    <a href="Geophysical Research Letters - 2024 - Tang - The Role of Cold Pools in Modulating Convective Organization During the MJO.pdf" target="_blank">Download PDF</a>
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=HmD-7ca0668" target="_blank" style="color: #FF4500;"><strong>More information and explanation in this video lecture</strong></a>
+                </li>
+            </ol>
+            <h3>(Before Ph.D. program:)</h3>
+            <ol>
+                <li>
+                    Fu, Y., Liu, P., & <strong>Tang, M.</strong> (2022). The Arctic Sea ice-cloud radiative negative feedback in the Barents and Kara Sea region. <em>Theoretical and Applied Climatology</em>. <a href="https://doi.org/10.1007/s00704-022-04137-x" target="_blank">https://doi.org/10.1007/s00704-022-04137-x</a>
+                </li>
+                <li>
+                    Liu, P., Zhang, Y., & <strong>Tang, M.</strong> (2021). Effects of Atlantic multidecadal oscillation and Pacific decadal oscillation on interdecadal variability of fog frequency in autumn - winter season in Southwest China. <em>International Journal of Climatology</em>.
+                </li>
+                <li>
+                    Liu, P., <strong>Tang, M.</strong>, Yu, H., & Zhang, Y. (2020). Influence of arctic oscillation on frequency of wintertime fog days in eastern China. <em>Atmosphere</em>, 11(2), 162.
+                </li>
+            </ol>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <a href="mailto:mingyue@hawaii.edu"><i class="fas fa-envelope"></i></a>
+                <a href="https://twitter.com/tang_mingyue" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.researchgate.net/profile/Mingyue-Tang" target="_blank"><i class="fab fa-researchgate"></i></a>
+                <a href="cv.pdf" target="_blank"><i class="fas fa-file-alt"></i></a>
+                <a href="https://scholar.google.com" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+            </div>         
+            <p>Contact: mingyue@hawaii.edu</p>
+            <p class="footer-small">&copy; 2024 Mingyue Tang. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
