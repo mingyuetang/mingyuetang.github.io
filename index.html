@@ -49,7 +49,7 @@
         .navbar {
             display: flex;
             justify-content: center;
-            background-color: #7f8c8d; /* 更优雅的灰色 */
+            background-color: #7f8c8d;
             padding: 10px 0;
         }
         .navbar a {
@@ -103,7 +103,7 @@
             color: #6ca6cd;
         }
         footer {
-            background-color: #f4f4f4; /* 与主体背景颜色匹配 */
+            background-color: #f4f4f4;
             color: #333;
             padding: 20px 0;
             text-align: center;
@@ -112,6 +112,7 @@
         @media (max-width: 768px) {
             .navbar {
                 flex-direction: column;
+                display: none;
             }
             .navbar a {
                 padding: 10px;
@@ -126,10 +127,29 @@
                 max-width: 300px;
                 height: auto;
             }
+            .navbar.active {
+                display: flex;
+            }
+            .menu-btn {
+                display: block;
+                background-color: #7f8c8d;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                cursor: pointer;
+                font-size: 1.2em;
+                border: none;
+                width: 100%;
+            }
+        }
+
+        .menu-btn {
+            display: none;
         }
     </style>
 </head>
 <body>
+    <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
@@ -146,7 +166,7 @@
         <div class="section">
             <p><em>Welcome to my homepage!</em></p>
             <p>I am a graduate student in the Department of Atmospheric Sciences at the University of Hawai’i at Manoa, working with Prof. Giuseppe Torri.</p>
-            <p>My Ph.D. work focuses on understanding convective organization and propagation associated with the MJO, especially the physical mechanisms of cold pool dynamics and gravity waves. My works mostly use the combination of Large Eddy Simulations/Cloud Resolving Models and a Lagrangian Particle Dispersion Model, as well as Convection-Permitting Models, trying to understand complicated dynamic and thermodynamic cloud processes.</p>
+            <p>My Ph.D. work focuses on understanding convective organization and propagation associated with the Madden-Julian Oscillation (MJO), especially the physical mechanisms of cold pool dynamics and gravity waves. My works mostly use the combination of Large Eddy Simulations/Cloud Resolving Models and a Lagrangian Particle Dispersion Model, as well as Convection-Permitting Models, trying to understand complicated dynamic and thermodynamic cloud processes.</p>
             <p>I am a big fan of cross-scale precipitating clouds :)</p>
         </div>
         <div class="image-row">
@@ -177,5 +197,12 @@
             <p>&copy; 2024 Mingyue Tang. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
