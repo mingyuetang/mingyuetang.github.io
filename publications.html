@@ -106,9 +106,20 @@
             left: 0;
             top: 0;
         }
-        .microphone-icon {
-            margin-right: 10px;
-            color: #6ca6cd; /* 设置图标颜色 */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+            .navbar a {
+                padding: 5px;
+                font-size: 0.9em;
+            }
+            .publication-section {
+                margin-left: 20px; /* 缩小移动端的缩进 */
+            }
+            .presentation-section {
+                margin-left: 20px; /* 缩小移动端的缩进 */
+            }
         }
     </style>
 </head>
