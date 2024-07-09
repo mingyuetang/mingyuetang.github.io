@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mingyue Tang's Research</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: rgba(108, 166, 205, 0.3); /* 半透明的蓝色背景 */
+        }
+        a {
+            color: inherit; /* 设置超链接颜色与其父元素一致 */
+            text-decoration: none; /* 去掉超链接下划线 */
+            transition: color 0.3s; /* 添加颜色过渡效果 */
+        }
+        a:hover {
+            color: #6ca6cd; /* 设置悬停时的颜色 */
         }
         .container {
             max-width: 800px;
@@ -18,6 +27,7 @@
             padding: 20px;
             background: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding-left: 40px; /* 整体缩进 */
         }
         h1, h2 {
             color: #333;
@@ -25,21 +35,50 @@
         p {
             color: #666;
         }
+        .section {
+            margin-bottom: 20px;
+        }
         .navbar {
             display: flex;
             justify-content: center;
-            background-color: #333;
+            background-color: #7f8c8d; /* 更优雅的灰色 */
             padding: 10px 0;
         }
         .navbar a {
             color: white;
-            padding: 14px 20px;
+            padding: 10px 15px;
             text-decoration: none;
             text-align: center;
+            font-size: 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
         }
         .navbar a:hover {
-            background-color: #ddd;
-            color: black;
+            background-color: #bdc3c7;
+            color: #333;
+        }
+        .research-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding-left: 40px; /* 整体缩进 */
+        }
+        .highlight {
+            font-weight: bold; /* 设置加粗 */
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+            .navbar a {
+                padding: 5px;
+                font-size: 0.9em;
+            }
+            .research-container {
+                margin-left: 20px; /* 缩小移动端的缩进 */
+            }
         }
     </style>
 </head>
@@ -51,9 +90,29 @@
         <a href="publications.html">Publications</a>
         <a href="share.html">Share</a>
     </div>
-    <div class="container">
-        <h1>Research</h1>
-        <p>Details about Mingyue Tang's research interests and projects.</p>
+    <div class="research-container">
+        <div class="section">
+            <h2>Convective Organization & Propagation</h2>
+            <p>Details about the research on convective organization and propagation...</p>
+        </div>
+    </div>
+    <div class="research-container">
+        <div class="section">
+            <h2>Madden-Julian Oscillation (MJO)</h2>
+            <p>Details about the research on Madden-Julian Oscillation (MJO)...</p>
+        </div>
+    </div>
+    <div class="research-container">
+        <div class="section">
+            <h2>Lagrangian Particle Dispersion Model (LPDM)</h2>
+            <p>Details about the research on Lagrangian Particle Dispersion Model (LPDM)...</p>
+        </div>
+    </div>
+    <div class="research-container">
+        <div class="section">
+            <h2>The Role of Cold Pools in Convective Organization during MJO</h2>
+            <p>Details about the research on the role of cold pools in convective organization during MJO...</p>
+        </div>
     </div>
 </body>
 </html>
