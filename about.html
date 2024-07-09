@@ -43,14 +43,6 @@
         .header h1 {
             margin: 0;
         }
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 0 auto;
-            display: block;
-        }
         .section {
             margin-bottom: 20px;
         }
@@ -73,27 +65,18 @@
             background-color: #bdc3c7;
             color: #333;
         }
-        .image-row {
+        .education-item {
             display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 10px;
         }
-        .image-row div {
-            text-align: center;
-            margin-bottom: 20px;
+        .education-item i {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #6ca6cd;
         }
-        .image-row img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .image-row p {
-            margin-top: 10px;
-            font-size: 1em;
-            color: #333;
+        .education-details {
+            margin-left: 10px;
         }
         .social-icons {
             display: flex;
@@ -120,7 +103,6 @@
             font-size: 0.8em;
             color: #999;
         }
-
         @media (max-width: 768px) {
             .navbar {
                 flex-direction: column;
@@ -128,15 +110,6 @@
             .navbar a {
                 padding: 5px;
                 font-size: 0.9em;
-            }
-            .image-row {
-                flex-direction: column;
-                align-items: center;
-            }
-            .image-row img {
-                width: 100%;
-                max-width: 300px;
-                height: auto;
             }
         }
     </style>
@@ -149,43 +122,29 @@
         <a href="publications.html">Publications</a>
         <a href="share.html">Share</a>
     </div>
-    <div class="header">
-        <h1>About Mingyue Tang</h1>
-        <img src="IMGprofile.png" alt="Profile Picture" class="profile-pic">
-        <p>Ph.D. Student, University of Hawai‘i at Mānoa</p>
-    </div>
     <div class="container">
         <div class="section">
             <h2>Education</h2>
-            <ul>
-                <li>
+            <div class="education-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div class="education-details">
                     <strong>Ph.D. Candidate, Atmospheric Sciences</strong><br>
                     University of Hawai‘i at Mānoa, Honolulu, HI<br>
                     Advisor: Giuseppe Torri<br>
                     Committee: Fei-Fei Jin, Yi-Leng Chen, Alison Nugent, Kelvin Richards, Jimy Dudhia
-                </li>
-                <li>
+                </div>
+            </div>
+            <div class="education-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div class="education-details">
                     <strong>Bachelor of Science, Atmospheric Sciences</strong><br>
                     Nanjing University of Information Science and Technology (NUIST), China<br>
                     GPA: 3.75/4, Ranking: 13/389<br>
                     Thesis: "The possible physical mechanism of tropopause height changing under Global Warming"<br>
                     Advisor: Peng Liu
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
     </div>
-    <footer>
-        <div class="container">
-            <div class="social-icons">
-                <a href="mailto:mingyue@hawaii.edu"><i class="fas fa-envelope"></i></a>
-                <a href="https://twitter.com/tang_mingyue" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.researchgate.net/profile/Mingyue-Tang" target="_blank"><i class="fab fa-researchgate"></i></a>
-                <a href="cv.pdf" target="_blank"><i class="fas fa-file-alt"></i></a>
-                <a href="https://scholar.google.com" target="_blank"><i class="fas fa-graduation-cap"></i></a>
-            </div>         
-            <p>Contact: mingyue@hawaii.edu</p>
-            <p class="footer-small">&copy; 2024 Mingyue Tang. All rights reserved.</p>
-        </div>
-    </footer>
 </body>
 </html>
