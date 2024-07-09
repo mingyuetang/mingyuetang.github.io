@@ -29,6 +29,14 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* 更重的光线阴影 */
             border-radius: 10px; /* 弱化边缘棱角 */
         }
+        .green-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(144, 238, 144, 0.7); /* 浅绿色背景，透明度 */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* 更重的光线阴影 */
+            border-radius: 10px; /* 弱化边缘棱角 */
+        }
         h1, h2 {
             color: #333;
         }
@@ -80,6 +88,17 @@
         .education-details {
             margin-left: 10px;
         }
+        .research-interests {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .research-interests div {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+            font-weight: bold;
+        }
         .social-icons {
             display: flex;
             justify-content: center;
@@ -112,6 +131,13 @@
             .navbar a {
                 padding: 5px;
                 font-size: 0.9em;
+            }
+            .research-interests {
+                flex-direction: column;
+                align-items: center;
+            }
+            .research-interests div {
+                margin: 5px 0;
             }
         }
     </style>
@@ -146,6 +172,19 @@
                     Thesis: "The possible physical mechanism of tropopause height changing under Global Warming"<br>
                     Advisor: Peng Liu
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="green-container">
+        <div class="section">
+            <h2>Research Interests</h2>
+            <div class="research-interests">
+                <div>Cloud organization</div>
+                <div>Cold pool dynamics</div>
+                <div>Madden-Julian Oscillation</div>
+                <div>Cross-scale interaction</div>
+                <div>Tropical air-sea interaction</div>
+                <div>Lagrangian model’s developing and analysis</div>
             </div>
         </div>
     </div>
